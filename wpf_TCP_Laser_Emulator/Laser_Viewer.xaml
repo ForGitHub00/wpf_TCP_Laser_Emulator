@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="wpf_TCP_Laser_Emulator.Laser_Viewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:wpf_TCP_Laser_Emulator"
+             mc:Ignorable="d" Height="200" Width="500">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Canvas x:Name="cnv">
+            <Line X2="400" Canvas.Left="50" Canvas.Top="30" Stroke="#FFF10505" StrokeThickness="5"/>
+            <Label x:Name="label" Content="X" Canvas.Left="246" Canvas.Top="14" Height="27" Width="16" RenderTransformOrigin="-0.576,0.467"/>
+            <Ellipse x:Name="el_pos" HorizontalAlignment="Left" Height="20" Stroke="#FF75FB05" StrokeThickness="5" VerticalAlignment="Top" Width="20" Canvas.Left="25" Canvas.Top="20"/>
+        </Canvas>
+    </Grid>
+</UserControl>
